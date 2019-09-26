@@ -5,14 +5,9 @@ import json
 from selenium import webdriver
 from scrapy.xlib.pydispatch import dispatcher
 from scrapy import signals
-from pprint import pprint
-import time
 from datetime import date, datetime
-from scrapy.loader.processors import Compose, MapCompose
 from JD.items import GoodsItem,GoodsPriceItem
 from JD.loaders.loader import GoodsPriceItemLoader, GoodsItemLoader
-from JD.loaders.processors import parse_goods_id,deal_goods_name,deal_goods_details
-
 
 
 class JdSpider(scrapy.Spider):
@@ -64,8 +59,8 @@ class JdSpider(scrapy.Spider):
         print("爬虫结束咯.....耗时:" ,(self.end_time-self.start_time))
 
     def start_requests(self):
-        self.word = "笔记本计算机 联想（Lenovo）"
-        yield scrapy.Request(self.search_url_temp.format(self.word, 1), callback=self.parse)
+        self.word = "笔记本计算机 华为（HUAWEI）"
+        yield scrapy.Request(self.search_url_temp.format(self.word, 1), callback=self.parse_selector, dont_filter=True)
 
     def read_order_list(self, response):
         """
@@ -124,12 +119,10 @@ class JdSpider(scrapy.Spider):
             print("请求细分分类：", url)
             yield scrapy.Request(url, callback=self.parse,meta={"middleware": "SeleniumMiddleware"}, dont_filter=True)
 
-
     def parse(self, response):
         print("parse_url",response.request.url)
         li_list = response.xpath('//ul[@class="gl-warp clearfix"]/li')
         print("--->", len(li_list))
-
         if len(li_list) > 0:
             for li in li_list:
                 goods_id = li.xpath("./@data-sku").extract_first()
@@ -137,32 +130,17 @@ class JdSpider(scrapy.Spider):
                 yield scrapy.Request(self.sku_url_temp.format(goods_id), callback=self.parse_sku,dont_filter=True)
 
     def parse_sku(self, response):
-        """
-        attr_list = response.xpath("//div[@id='choose-attrs']/div")[:-1]
-        for attr in attr_list:
-            sku_list = attr.xpath("./div[@class='dd']/div[contains(@class,'item')]")
-            for sku in sku_list:
-                item = {}
-                data_sku = sku.xpath("./@data-sku").extract_first()
-                item["goods_specs"] = sku.xpath("./@data-value").extract_first()
-                yield scrapy.Request(self.sku_url_temp.format(data_sku), callback=self.parse_data, meta={"item":item})
-        """
         print("parse_sku_url", response.request.url)
         colorSize_str = re.findall(r"colorSize:(.*?}]),[ ]+?", response.body.decode(response.encoding))
         if len(colorSize_str) > 0:
-            try:
-                colorSize_list = json.loads(colorSize_str[0],strict=False)
-                for sku in colorSize_list:
-                    item = {}
-                    goods_id = sku.pop("skuId")
-                    print(goods_id)
-                    self.ids_set.add(goods_id)
-                    item["goods_specs"] = " ".join(sku.values())
-                    yield scrapy.Request(self.sku_url_temp.format(goods_id), callback=self.parse_data, meta={"item": item})
-            except json.decoder.JSONDecodeError:
-                print("*********")
-                print(colorSize_str)
-                print("*********")
+            colorSize_list = json.loads(colorSize_str[0],strict=False)
+            for sku in colorSize_list:
+                item = {}
+                goods_id = sku.pop("skuId")
+                self.ids_set.add(goods_id)
+                item["goods_specs"] = " ".join(sku.values())
+                yield scrapy.Request(self.sku_url_temp.format(goods_id), callback=self.parse_data, meta={"item": item})
+
         else:
             self.ids_set.add(response.request.url.split("/")[-1].split(".")[0])
             item_1 = {}
@@ -175,8 +153,7 @@ class JdSpider(scrapy.Spider):
     def parse_data(self, response):
         print("parse_date_url", response.request.url)
         self.data_num+=1
-        item_loader = GoodsItemLoader(item=GoodsItem(),response=response, spider=self)
-        # item = response.meta["item"]
+        item_loader = GoodsItemLoader(item=GoodsItem(),response=response)
         item_loader.add_value("goods_specs",response.meta["item"]["goods_specs"])
         item_loader.add_value("goods_url", response.request.url)
         item_loader.add_value("goods_id", response.request.url)
@@ -184,62 +161,33 @@ class JdSpider(scrapy.Spider):
         if not response.xpath("//ul[contains(@class,'parameter2')]/li[1]/@title").extract_first():
             item_loader.replace_xpath("goods_name", "//title/text()")
         item_loader.add_xpath("goods_brand", "//ul[@id='parameter-brand']/li/@title")
-        item_loader.add_xpath("goods_details","//ul[contains(@class,'parameter2')]/li/text()")
-        item_loader.add_value("history_price", [])
+        item_loader.add_xpath("goods_details","//ul[contains(@class,'parameter2')]/li//text()")
         item_loader.add_value("update_time", "")
-
-
-        # item["goods_url"] = response.request.url
-        # item["goods_id"] = response.request.url.split("/")[-1].split(".")[0]
-        # item["goods_name"] = response.xpath(
-        #     "//ul[contains(@class,'parameter2')]/li[1]/@title").extract_first() if response.xpath(
-        #     "//ul[contains(@class,'parameter2')]/li[1]/@title").extract_first() else response.xpath(
-        #     "//title/text()").extract_first()
-        # item["goods_brand"] = response.xpath("//ul[@id='parameter-brand']/li/@title").extract_first() if response.xpath(
-        #     "//ul[@id='parameter-brand']/li/@title").extract_first() else item["goods_name"]
-        # item["goods_details"] = []
-        # item["history_prices"] = []
-        # item["goods_details"] = [li.xpath("./text()").extract_first() for li in
-        #                          response.xpath("//ul[contains(@class,'parameter2')]/li")]
-
-        # goods_details = response.xpath("//ul[contains(@class,'parameter2')]/li/text()").extract()
-        # print('--->',goods_details)
-
         item = item_loader.load_item()
-        print("====>",item)
-
-        # yield scrapy.Request(self.sku_price_temp.format(item["goods_id"]), callback=self.parse_price,
-        #                      meta={"item": item})
+        yield scrapy.Request(self.sku_price_temp.format(item["goods_id"]), callback=self.parse_price,
+                             meta={"item_loader":item})
 
     def parse_price(self, response):
-        item = response.meta["item"]
+        item_loader = response.meta["item_loader"]
         price_dict = json.loads(response.body)
         time_now = datetime.strftime(date.today(), '%Y-%m-%d')
-
         price_item = {}
 
         if len(price_dict) > 0:
             price_item_loader = GoodsPriceItemLoader(item=GoodsPriceItem())
-            price_item_loader.add_value("goods_price", price_dict[0]["p"])
+            price_item_loader.add_value("last_price", price_dict[0]["p"])
             price_item_loader.add_value("last_time",time_now)
             price_item = price_item_loader.load_item()
 
-        item_loader = GoodsItemLoader(item=GoodsItem())
+        item_loader = GoodsItemLoader(item=item_loader)
         item_loader.replace_value("update_time", time_now)
         item_loader.add_value("history_prices", price_item)
+        item_loader.add_value("goods_price", price_item["last_price"])
         item = item_loader.load_item()
 
-            # price_item = {}
-            # item["time_now"] = time_now
-            # item["goods_price"] = price_dict[0]["p"]
-            # price_item["last_price"] = price_dict[0]["p"]
-            # price_item["last_time"] = time_now
-            # item["history_prices"].append(price_item)
-
-
-        print(item)
+        # print("===>",item)
         self.item_num += 1
         print("此时item", self.item_num, "个")
         print("此时解析data", self.data_num, "个")
 
-        # yield item
+        yield item

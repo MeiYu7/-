@@ -15,14 +15,14 @@ class GoodsItem(Item):
     goods_id = Field(input_processor = MapCompose(parse_goods_id))
     goods_name = Field(input_processor = MapCompose(deal_goods_name))
     goods_brand = Field()
-    goods_details = Field(input_process=MapCompose(deal_goods_details))
+    goods_details = Field(input_processor=Compose(deal_goods_details))
     goods_specs = Field()
-    goods_price = Field()
+    goods_price = Field(input_processor=MapCompose(deal_goods_price))
     update_time = Field()
-    history_price = Field()
+    history_prices = Field(input_processor=Compose(add_list_value))
 
 class GoodsPriceItem(Item):
-    last_price = Field()
+    last_price = Field(input_processor=MapCompose(deal_goods_price))
     last_time = Field()
 
 

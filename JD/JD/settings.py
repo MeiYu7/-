@@ -94,27 +94,28 @@ ITEM_PIPELINES = {
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 """scrapy-redis 配置"""
-# SCHEDULER = "scrapy_redis_bloomfilter.scheduler.Scheduler"
+SCHEDULER = "scrapy_redis_bloomfilter.scheduler.Scheduler"
 
 # Ensure all spiders share same duplicates filter through redis.
-# DUPEFILTER_CLASS = "scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter"
+DUPEFILTER_CLASS = "scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter"
 
 # Redis URL
-# REDIS_URL = 'redis://localhost:6379'
+REDIS_URL = 'redis://localhost:6379'
 
 # Number of Hash Functions to use, defaults to 6
-# BLOOMFILTER_HASH_NUMBER = 6
+BLOOMFILTER_HASH_NUMBER = 6
 
 # Bit
-# BLOOMFILTER_BIT = 30
+BLOOMFILTER_BIT = 30
 
 # Persist
-# SCHEDULER_PERSIST = True
+SCHEDULER_PERSIST = True
 
 # Mongo URL
-MONGO_URL = 'mongodb://localhost:27017'
-MONGO_DB = 'jd'
+MONGO_URI = 'mongodb://localhost:27017'
+MONGO_DATABASE = 'jd'
 # MONGODB_ERROR = "scrapy_error"
+COLLECTION_NAME = 'goods'
 
 """
 第一个请求时间达到多少秒重试
@@ -128,5 +129,9 @@ RETRY_TIMES = 3
 """日志模块"""
 # to_day = datetime.datetime.now()
 # log_file_path = "log/scrapy_{}_{}_{}.log".format(to_day.year,to_day.month, to_day.day)
-# LOG_LEVEL = "DEBUG"
+LOG_LEVEL = "INFO"
 # LOG_FILE = log_file_path
+
+"""保存数据的频率"""
+SAVE_TIME_INTERVAL = 60
+SAVE_ITEM_CAPACITY = 100

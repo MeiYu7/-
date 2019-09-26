@@ -10,7 +10,16 @@ def deal_goods_name(value):
 
 
 def deal_goods_details(value):
-    print("<---value--->",value)
+    # print("<---value--->",value)
     value_new = []
     value_new.append(value)
     return value_new
+
+def deal_goods_price(value):
+    try:
+        value = float(value)
+    except:
+        value = value
+    return value
+
+add_list_value = lambda x:[x]
