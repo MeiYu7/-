@@ -12,7 +12,7 @@ from scrapy.log import logger
 
 class JdPipeline(object):
 
-    def __init__(self,mongo_uri, mongo_db,collection_name,time_interval,item_capacity):
+    def __init__(self,mongo_uri, mongo_db,collection_name,time_interval,item_capacity,stats):
         self.mongo_uri = mongo_uri
         self.mongo_db = mongo_db
         self.collection_name = collection_name
@@ -21,6 +21,7 @@ class JdPipeline(object):
         self.goods_items = []
         self.time_start = datetime.now()
         self.insert_num = 0
+        self.stats = stats
 
     @classmethod
     def from_crawler(cls, crawler):
@@ -29,7 +30,8 @@ class JdPipeline(object):
             mongo_db=crawler.settings.get('MONGO_DATABASE', 'items'),
             collection_name = crawler.settings.get('GOODS_COLLECITON', 'goods'),
             time_interval = crawler.settings.get("SAVE_TIME_INTERVAL", 60),
-            item_capacity = crawler.settings.get("SAVE_ITEM_CAPACITY", 100)
+            item_capacity = crawler.settings.get("SAVE_ITEM_CAPACITY", 100),
+            stats = crawler.stats
         )
 
     def open_spider(self, spider):
@@ -42,6 +44,7 @@ class JdPipeline(object):
             self.insert_many_goods()
         self.client.close()
         print("最终插入{}条".format(self.insert_num))
+        self.stats.set_value("finaly_insert_item",self.insert_num )
         logger.info("最终插入{}条".format(self.insert_num))
 
     def process_item(self, item, spider):

@@ -23,6 +23,7 @@ class GoodsItem(Item):
     history_prices = Field(input_processor=Compose(add_list_value))
     goods_cate_id = Field()
     goods_code = Field()
+    error = Field()  # 异常
 
 class GoodsPriceItem(Item):
     last_price = Field(input_processor=MapCompose(deal_goods_price))
@@ -38,3 +39,19 @@ class ErrorItem(Item):
     type = Field()
     content = Field()
     time = Field()
+
+
+class StatsItem(Item):
+    """数据收集"""
+    collection = 'scrapy_stats'
+
+    start_time = Field()
+    finish_time = Field()
+    finish_reason = Field()
+    item_scraped_count = Field()
+    response_received_count = Field()
+    item_dropped_count = Field()
+    item_dropped_reasons_count = Field()
+    finaly_insert_item = Field()
+    finaly_find_ids = Field()
+    time_secodes_consum = Field()

@@ -60,6 +60,9 @@ class JdSpider(scrapy.Spider):
         self.browser.close()
         self.end_time = datetime.now()
         print("爬虫结束咯.....耗时:", (self.end_time - self.start_time))
+        self.crawler.stats.set_value("finaly_find_ids", len(self.ids_set))
+        self.crawler.stats.set_value("time_secodes_consum",(self.end_time - self.start_time).seconds)
+
 
     @classmethod
     def from_crawler(cls, crawler, *args, **kwargs):
@@ -76,7 +79,7 @@ class JdSpider(scrapy.Spider):
 
     def start_requests(self):
         cates = self.mongo_db[self.cate_brand].find()
-        for i in parse_goods_brands(cates)[2:4]:
+        for i in parse_goods_brands(cates)[7:10]:
             brand_item = {}
             brand_item["goods_brand"] = i["goods_brand"]
             brand_item["goods_cate"] = i["goods_cate"]
@@ -89,7 +92,6 @@ class JdSpider(scrapy.Spider):
 
     def parse_selector(self, response):
         # 细分分类
-        print("请求细分初始url", response.request.url)
         selector_list = response.xpath("//div[contains(@class,'J_selectorLine')]")
         for selector in selector_list:
             selector_name = selector.xpath("./@class").extract_first()
@@ -102,7 +104,6 @@ class JdSpider(scrapy.Spider):
 
         # 剩余页码数据
         for i in range(3, 201, 2):
-            print("剩余页码正在请求{}页".format(i))
             yield scrapy.Request(self.search_url_temp.format(self.word, 1), callback=self.parse,
                                  meta={"middleware": "SeleniumMiddleware", "brand_item": response.meta["brand_item"]})
 
@@ -115,17 +116,14 @@ class JdSpider(scrapy.Spider):
         except Exception as e:
             print("解析页码错误", e)
             total_page = 100
-        print("细分分类里一共页码", total_page)
         for i in range(1, (2 * total_page + 1), 2):
             url = selector_url_start + '&page=' + str(i)
-            print("请求细分分类：", url)
             yield scrapy.Request(url, callback=self.parse,
                                  meta={"middleware": "SeleniumMiddleware", "brand_item": response.meta["brand_item"]}, dont_filter=True)
 
     def parse(self, response):
         print("parse_url", response.request.url)
         li_list = response.xpath('//ul[@class="gl-warp clearfix"]/li')
-        print("--->", len(li_list))
         if len(li_list) > 0:
             for li in li_list:
                 goods_id = li.xpath("./@data-sku").extract_first()
@@ -133,14 +131,14 @@ class JdSpider(scrapy.Spider):
                 yield scrapy.Request(self.sku_url_temp.format(goods_id), callback=self.parse_sku,meta={"brand_item": response.meta["brand_item"]}, dont_filter=True)
 
     def parse_sku(self, response):
-        print("parse_sku_url", response.request.url)
-        colorSize_str = re.findall(r"colorSize:(.*?}]),[ ]+?", response.body.decode(response.encoding))
+        colorSize_str = re.findall(r"colorSize:(.*?}]),[ ]+?[warestatus:]+", response.body.decode(response.encoding))
         if len(colorSize_str) > 0:
             colorSize_list = json.loads(colorSize_str[0], strict=False)
             for sku in colorSize_list:
                 item = {}
                 goods_id = sku.pop("skuId")
                 self.ids_set.add(goods_id)
+
                 item["goods_specs"] = " ".join(sku.values())
                 yield scrapy.Request(self.sku_url_temp.format(goods_id), callback=self.parse_data, meta={"item": item,"brand_item": response.meta["brand_item"]})
 
@@ -154,7 +152,6 @@ class JdSpider(scrapy.Spider):
             yield scrapy.Request(response.request.url, callback=self.parse_data, meta={"item": item_1,"brand_item": response.meta["brand_item"]})
 
     def parse_data(self, response):
-        print("parse_date_url", response.request.url)
         self.data_num += 1
         item_loader = GoodsItemLoader(item=GoodsItem(), response=response)
         item_loader.add_value("goods_specs", response.meta["item"]["goods_specs"])
@@ -174,7 +171,7 @@ class JdSpider(scrapy.Spider):
     def parse_price(self, response):
         item_loader = response.meta["item_loader"]
         price_dict = json.loads(response.body)
-        time_now = datetime.strftime(date.today(), '%Y-%m-%d')
+        time_now =datetime.strftime(date.today(), '%Y-%m-%d')
         price_item = {}
 
         if len(price_dict) > 0:
@@ -188,8 +185,9 @@ class JdSpider(scrapy.Spider):
         item_loader.add_value("history_prices", price_item)
         item_loader.add_value("goods_price", price_item["last_price"])
         item = item_loader.load_item()
-        print("===>", item)
+        # print("===>", item)
         self.item_num += 1
+        self.crawler.stats.inc_value("item_num")
         print("此时item{}个".format(self.item_num))
         print("此时解析data{}个".format(self.data_num))
 

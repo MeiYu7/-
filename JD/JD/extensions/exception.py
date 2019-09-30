@@ -55,4 +55,4 @@ class FieldErrorExtension(object):
 
     def insert_db(self, item):
         item = dict(item)
-        self.mongo_db[self.error].update_one({'error': item['error'], 'url': item['url']}, {'$set': item}, upsert=True)
+        self.mongo_db[self.error].update_one({'error': item['error'], 'goods_url': item['goods_url']}, {'$set': item}, upsert=True)

@@ -56,7 +56,8 @@ DOWNLOADER_MIDDLEWARES = {
     'JD.middlewares.JdDownloaderMiddleware': None,
     'JD.middlewares.ProcessAllExceptionMiddleware': 297,
     'JD.middlewares.JdDownloadmiddlewareRandomUseragent': 299,
-    'JD.middlewares.SeleniumMiddleware': 300
+    'JD.middlewares.SeleniumMiddleware': 300,
+    'JD.middlewares.StatCollectorMiddleware': 400
 }
 
 # Enable or disable extensions
@@ -64,6 +65,7 @@ DOWNLOADER_MIDDLEWARES = {
 EXTENSIONS = {
     'scrapy.extensions.telnet.TelnetConsole': 0,
     'JD.extensions.db.MonGoDB': 100,
+    'JD.extensions.corestats.CoreStats': 110,
     'JD.extensions.requst.BeforeFilterRequest': 120,
     'JD.extensions.exception.SpiderExceptionExtension': 140,
     'JD.extensions.exception.FieldErrorExtension': 160,
@@ -120,6 +122,7 @@ MONGO_DATABASE = 'jd'
 MONGODB_ERROR = "scrapy_error"
 GOODS_COLLECITON = 'goods'
 CATE_COLLECTION = 'categorys'
+STATS_COLLECTION = 'scrapy_stats'
 
 """
 第一个请求时间达到多少秒重试
