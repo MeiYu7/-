@@ -14,6 +14,7 @@ from twisted.web.client import ResponseFailed
 from scrapy.core.downloader.handlers.http11 import TunnelError
 from scrapy.conf import settings
 from JD.items import ErrorItem
+from scrapy.log import logger
 
 class JdSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -141,12 +142,13 @@ class ProcessAllExceptionMiddleware(object):
                            IOError, TunnelError)
 
     def __init__(self, settings):
-        self.mongo_db = settings.get('MONGO_URL')
+        self.mongo_db = settings.get('DB_MONGO')
         self.error = self.mongo_db[settings.get('MONGODB_ERROR', ErrorItem.collection)]
 
     @classmethod
     def from_settings(cls, settings):
-        return cls(settings)
+        o = cls(settings)
+        return o
 
     def process_exception(self, request, exception, spider):
         if isinstance(exception, self.EXCEPTIONS):

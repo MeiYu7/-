@@ -1,0 +1,495 @@
+2019-09-26 17:32:05 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-26 17:32:05 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-26 17:32:05 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_26.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-26 17:32:05 [scrapy.extensions.telnet] INFO: Telnet Password: b13caa8a6707a569
+2019-09-26 17:32:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-09-26 17:32:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-26 17:32:09 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-26 17:32:09 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\pipelines.py:10: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-26 17:32:09 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-26 17:32:09 [scrapy.core.engine] INFO: Spider opened
+2019-09-26 17:32:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:32:09 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-09-26 17:36:57 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-26 17:36:57 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-26 17:36:57 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_26.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-26 17:36:57 [scrapy.extensions.telnet] INFO: Telnet Password: 7eb61f6c07a79940
+2019-09-26 17:36:57 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-09-26 17:37:00 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-26 17:37:00 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-26 17:37:00 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 80, in crawl
+    self.engine = self._create_engine()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 105, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.downloader = downloader_cls(crawler)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\core\downloader\__init__.py", line 88, in __init__
+    self.middleware = DownloaderMiddlewareManager.from_crawler(crawler)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\middleware.py", line 53, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\middleware.py", line 35, in from_settings
+    mw = create_instance(mwcls, settings, crawler)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\utils\misc.py", line 142, in create_instance
+    return objcls.from_settings(settings, *args, **kwargs)
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py", line 150, in from_settings
+    return cls(settings)
+TypeError: ProcessAllExceptionMiddleware() takes no arguments
+2019-09-26 17:37:31 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-26 17:37:31 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-26 17:37:31 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_26.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-26 17:37:31 [scrapy.extensions.telnet] INFO: Telnet Password: 3c95923ed8f2af67
+2019-09-26 17:37:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-09-26 17:37:34 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-26 17:37:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-26 17:37:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-26 17:37:34 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-26 17:37:34 [scrapy.core.engine] INFO: Spider opened
+2019-09-26 17:37:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:37:34 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-09-26 17:37:35 [jd] INFO: 此时item1个
+2019-09-26 17:37:35 [jd] INFO: 此时解析data0个
+2019-09-26 17:37:35 [jd] INFO: 此时item2个
+2019-09-26 17:37:35 [jd] INFO: 此时解析data2个
+2019-09-26 17:37:36 [jd] INFO: 此时item3个
+2019-09-26 17:37:36 [jd] INFO: 此时解析data3个
+2019-09-26 17:37:36 [jd] INFO: 此时item4个
+2019-09-26 17:37:36 [jd] INFO: 此时解析data4个
+2019-09-26 17:37:37 [jd] INFO: 此时item5个
+2019-09-26 17:37:37 [jd] INFO: 此时解析data5个
+2019-09-26 17:37:37 [jd] INFO: 此时item6个
+2019-09-26 17:37:37 [jd] INFO: 此时解析data6个
+2019-09-26 17:37:38 [jd] INFO: 此时item7个
+2019-09-26 17:37:38 [jd] INFO: 此时解析data7个
+2019-09-26 17:37:39 [jd] INFO: 此时item8个
+2019-09-26 17:37:39 [jd] INFO: 此时解析data7个
+2019-09-26 17:37:39 [jd] INFO: 此时item9个
+2019-09-26 17:37:39 [jd] INFO: 此时解析data7个
+2019-09-26 17:37:40 [jd] INFO: 此时item10个
+2019-09-26 17:37:40 [jd] INFO: 此时解析data7个
+2019-09-26 17:37:41 [jd] INFO: 此时item11个
+2019-09-26 17:37:41 [jd] INFO: 此时解析data7个
+2019-09-26 17:37:41 [jd] INFO: 此时item12个
+2019-09-26 17:37:41 [jd] INFO: 此时解析data7个
+2019-09-26 17:37:42 [jd] INFO: 此时item13个
+2019-09-26 17:37:42 [jd] INFO: 此时解析data7个
+2019-09-26 17:37:42 [jd] INFO: 此时item14个
+2019-09-26 17:37:42 [jd] INFO: 此时解析data7个
+2019-09-26 17:38:33 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-26 17:38:33 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-26 17:38:33 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_26.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-26 17:38:33 [scrapy.extensions.telnet] INFO: Telnet Password: beb0061491eb6e10
+2019-09-26 17:38:33 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-09-26 17:38:36 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-26 17:38:36 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-26 17:38:36 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-26 17:38:36 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-26 17:38:36 [scrapy.core.engine] INFO: Spider opened
+2019-09-26 17:38:36 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:38:36 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-09-26 17:38:37 [jd] INFO: 此时item1个
+2019-09-26 17:38:37 [jd] INFO: 此时解析data0个
+2019-09-26 17:38:37 [jd] INFO: 此时item2个
+2019-09-26 17:38:37 [jd] INFO: 此时解析data1个
+2019-09-26 17:38:38 [jd] INFO: 此时item3个
+2019-09-26 17:38:38 [jd] INFO: 此时解析data2个
+2019-09-26 17:38:39 [jd] INFO: 此时item4个
+2019-09-26 17:38:39 [jd] INFO: 此时解析data3个
+2019-09-26 17:38:40 [jd] INFO: 此时item5个
+2019-09-26 17:38:40 [jd] INFO: 此时解析data5个
+2019-09-26 17:38:40 [jd] INFO: 此时item6个
+2019-09-26 17:38:40 [jd] INFO: 此时解析data6个
+2019-09-26 17:39:00 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-26 17:39:00 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-26 17:39:00 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_26.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-26 17:39:00 [scrapy.extensions.telnet] INFO: Telnet Password: 09b514e6bd5a80fd
+2019-09-26 17:39:00 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-09-26 17:39:03 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-26 17:39:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-26 17:39:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-26 17:39:03 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-26 17:39:03 [scrapy.core.engine] INFO: Spider opened
+2019-09-26 17:39:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:39:03 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-09-26 17:39:04 [jd] INFO: 请求细分初始url:https://search.jd.com/Search?keyword=%E7%AC%94%E8%AE%B0%E6%9C%AC%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E5%8D%8E%E4%B8%BA%EF%BC%88HUAWEI%EF%BC%89&enc=utf-81&page=1
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求3页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求5页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求7页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求9页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求11页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求13页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求15页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求17页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求19页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求21页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求23页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求25页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求27页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求29页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求31页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求33页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求35页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求37页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求39页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求41页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求43页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求45页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求47页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求49页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求51页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求53页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求55页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求57页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求59页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求61页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求63页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求65页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求67页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求69页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求71页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求73页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求75页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求77页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求79页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求81页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求83页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求85页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求87页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求89页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求91页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求93页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求95页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求97页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求99页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求101页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求103页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求105页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求107页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求109页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求111页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求113页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求115页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求117页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求119页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求121页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求123页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求125页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求127页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求129页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求131页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求133页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求135页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求137页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求139页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求141页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求143页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求145页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求147页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求149页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求151页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求153页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求155页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求157页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求159页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求161页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求163页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求165页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求167页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求169页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求171页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求173页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求175页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求177页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求179页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求181页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求183页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求185页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求187页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求189页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求191页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求193页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求195页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求197页
+2019-09-26 17:39:04 [jd] INFO: 剩余页码正在请求199页
+2019-09-26 17:40:54 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-26 17:40:54 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-26 17:40:54 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_26.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-26 17:40:54 [scrapy.extensions.telnet] INFO: Telnet Password: 4ca411737d182869
+2019-09-26 17:40:54 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-09-26 17:40:57 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-26 17:40:57 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-26 17:40:57 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-26 17:40:57 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-26 17:40:57 [scrapy.core.engine] INFO: Spider opened
+2019-09-26 17:40:57 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:40:57 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-09-26 17:41:39 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-26 17:41:39 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-26 17:41:39 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_26.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-26 17:41:39 [scrapy.extensions.telnet] INFO: Telnet Password: 433ebcfd28b8ffc9
+2019-09-26 17:41:39 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-09-26 17:41:42 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-26 17:41:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-26 17:41:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-26 17:41:42 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-26 17:41:42 [scrapy.core.engine] INFO: Spider opened
+2019-09-26 17:41:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:41:42 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-09-26 17:42:08 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-26 17:42:08 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-26 17:42:08 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_26.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-26 17:42:08 [scrapy.extensions.telnet] INFO: Telnet Password: 280c02ac51411a40
+2019-09-26 17:42:08 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-09-26 17:42:11 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-26 17:42:11 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-26 17:42:11 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-26 17:42:11 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-26 17:42:11 [scrapy.core.engine] INFO: Spider opened
+2019-09-26 17:42:11 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:42:11 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-09-26 17:43:38 [scrapy.extensions.logstats] INFO: Crawled 29 pages (at 29 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:44:42 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 19 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:45:47 [scrapy.extensions.logstats] INFO: Crawled 66 pages (at 18 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:46:45 [scrapy.extensions.logstats] INFO: Crawled 83 pages (at 17 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:47:17 [scrapy.extensions.logstats] INFO: Crawled 92 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:48:16 [scrapy.extensions.logstats] INFO: Crawled 107 pages (at 15 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:49:19 [scrapy.extensions.logstats] INFO: Crawled 126 pages (at 19 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:50:11 [scrapy.extensions.logstats] INFO: Crawled 148 pages (at 22 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:51:11 [scrapy.extensions.logstats] INFO: Crawled 182 pages (at 34 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:52:11 [scrapy.extensions.logstats] INFO: Crawled 223 pages (at 41 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:53:11 [scrapy.extensions.logstats] INFO: Crawled 256 pages (at 33 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:54:11 [scrapy.extensions.logstats] INFO: Crawled 292 pages (at 36 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:55:11 [scrapy.extensions.logstats] INFO: Crawled 325 pages (at 33 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:56:11 [scrapy.extensions.logstats] INFO: Crawled 361 pages (at 36 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:57:11 [scrapy.extensions.logstats] INFO: Crawled 396 pages (at 35 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:58:05 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-26 17:58:05 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-26 17:58:05 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_26.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-26 17:58:05 [scrapy.extensions.telnet] INFO: Telnet Password: e7656a5e74036b26
+2019-09-26 17:58:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-09-26 17:58:05 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:11463/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-26 17:58:05 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:11463
+2019-09-26 17:58:07 [urllib3.connectionpool] DEBUG: http://127.0.0.1:11463 "POST /session HTTP/1.1" 200 965
+2019-09-26 17:58:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-26 17:58:08 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-26 17:58:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-26 17:58:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-26 17:58:08 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-26 17:58:08 [scrapy.core.engine] INFO: Spider opened
+2019-09-26 17:58:08 [jd] DEBUG: Resuming crawl (7000 requests scheduled)
+2019-09-26 17:58:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-09-26 17:58:08 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-09-26 17:58:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/41453810314.html0>
+2019-09-26 17:58:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/41567640170.html0>
+2019-09-26 17:58:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/41567640171.html0>
+2019-09-26 17:58:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/41567640171.html0>
+2019-09-26 17:58:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/41567640172.html0>
+2019-09-26 17:58:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/41660301090.html0>
+2019-09-26 17:58:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/41902763130.html0>
+2019-09-26 17:58:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/42202046792.html0>
+2019-09-26 17:58:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/42202046792.html0>
+2019-09-26 17:58:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/42314402524.html0>
+2019-09-26 17:58:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43009563694.html0>
+2019-09-26 17:58:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43089598109.html0>
+2019-09-26 17:58:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43089598109.html0>
+2019-09-26 17:58:16 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43158970766.html0>
+2019-09-26 17:58:17 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43288559011.html0>

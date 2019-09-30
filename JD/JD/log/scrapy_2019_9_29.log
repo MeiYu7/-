@@ -1,0 +1,1461 @@
+2019-09-29 10:32:19 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:32:19 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:32:19 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:32:19 [scrapy.extensions.telnet] INFO: Telnet Password: ec25d4a3704dc776
+2019-09-29 10:32:19 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:32:20 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:32:20 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 10:32:30 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:32:30 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:32:30 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:32:30 [scrapy.extensions.telnet] INFO: Telnet Password: f16972554a25787f
+2019-09-29 10:32:30 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-09-29 10:32:30 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:32:30 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 10:35:52 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:35:52 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:35:52 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:35:52 [scrapy.extensions.telnet] INFO: Telnet Password: 7420945b89243fb5
+2019-09-29 10:35:53 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:35:53 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:35:53 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 10:36:18 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:36:18 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:36:18 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:36:18 [scrapy.extensions.telnet] INFO: Telnet Password: d85d290b0f50609e
+2019-09-29 10:36:19 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:36:19 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:36:19 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 10:39:04 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:39:04 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:39:04 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:39:04 [scrapy.extensions.telnet] INFO: Telnet Password: 84271dfb70097b47
+2019-09-29 10:39:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:39:05 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:39:05 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\common\service.py", line 76, in start
+    stdin=PIPE)
+  File "C:\ProgramData\Anaconda3\lib\subprocess.py", line 769, in __init__
+    restore_signals, start_new_session)
+  File "C:\ProgramData\Anaconda3\lib\subprocess.py", line 1172, in _execute_child
+    startupinfo)
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 43, in __init__
+    executable_path="C:/Users/myq91/Downloads/chromedriver.exe")
+  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 73, in __init__
+    self.service.start()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\common\service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2019-09-29 10:43:29 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:43:29 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:43:29 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:43:29 [scrapy.extensions.telnet] INFO: Telnet Password: d924fe7fefac0f74
+2019-09-29 10:43:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:43:30 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2237/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 10:43:30 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:2237
+2019-09-29 10:43:31 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2237 "POST /session HTTP/1.1" 200 886
+2019-09-29 10:43:31 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 10:43:32 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 10:43:32 [fake_useragent] DEBUG: Error occurred during fetching https://www.w3schools.com/browsers/default.asp
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1384, in connect
+    super().connect()
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 928, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:\ProgramData\Anaconda3\lib\socket.py", line 707, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "C:\ProgramData\Anaconda3\lib\socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\fake_useragent\utils.py", line 67, in get
+    context=context,
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 1360, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 11004] getaddrinfo failed>
+2019-09-29 10:43:32 [fake_useragent] DEBUG: Sleeping for 0.1 seconds
+2019-09-29 10:43:32 [fake_useragent] DEBUG: Error occurred during fetching https://www.w3schools.com/browsers/default.asp
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1384, in connect
+    super().connect()
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 928, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:\ProgramData\Anaconda3\lib\socket.py", line 707, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "C:\ProgramData\Anaconda3\lib\socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\fake_useragent\utils.py", line 67, in get
+    context=context,
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 1360, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 11004] getaddrinfo failed>
+2019-09-29 10:43:32 [fake_useragent] WARNING: Error occurred during loading data. Trying to use cache server https://fake-useragent.herokuapp.com/browsers/0.1.11
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 956, in send
+    self.connect()
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 1384, in connect
+    super().connect()
+  File "C:\ProgramData\Anaconda3\lib\http\client.py", line 928, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:\ProgramData\Anaconda3\lib\socket.py", line 707, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "C:\ProgramData\Anaconda3\lib\socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\fake_useragent\utils.py", line 67, in get
+    context=context,
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 543, in _open
+    '_open', req)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 503, in _call_chain
+    result = func(*args)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 1360, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:\ProgramData\Anaconda3\lib\urllib\request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 11004] getaddrinfo failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\fake_useragent\utils.py", line 154, in load
+    for item in get_browsers(verify_ssl=verify_ssl):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\fake_useragent\utils.py", line 97, in get_browsers
+    html = get(settings.BROWSERS_STATS_PAGE, verify_ssl=verify_ssl)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\fake_useragent\utils.py", line 84, in get
+    raise FakeUserAgentError('Maximum amount of retries reached')
+fake_useragent.errors.FakeUserAgentError: Maximum amount of retries reached
+2019-09-29 10:43:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 10:43:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 10:43:34 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 10:43:34 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:43:34 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 75, in start_requests
+    cates = self.cate_brand.find()
+AttributeError: 'JdSpider' object has no attribute 'cate_brand'
+2019-09-29 10:44:06 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:44:06 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:44:06 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:44:06 [scrapy.extensions.telnet] INFO: Telnet Password: ee9b8c7fefe0b44f
+2019-09-29 10:44:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:44:06 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:44:06 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 10:45:17 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:45:17 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:45:17 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:45:17 [scrapy.extensions.telnet] INFO: Telnet Password: 1c28fe21dc951579
+2019-09-29 10:45:17 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:45:18 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:45:18 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 10:51:54 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:51:54 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:51:54 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:51:54 [scrapy.extensions.telnet] INFO: Telnet Password: 4bb27405a9a89ae4
+2019-09-29 10:51:55 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:51:55 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:51:55 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 71, in from_crawler
+    spider = super(JdSpider, cls).from_crawler(crawler, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 10:52:10 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:52:10 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:52:10 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:52:10 [scrapy.extensions.telnet] INFO: Telnet Password: 5d299c09b2f37809
+2019-09-29 10:52:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:52:10 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:52:10 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 71, in from_crawler
+    spider = super(JdSpider, cls).from_crawler(crawler, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 10:52:54 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:52:54 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:52:54 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:52:54 [scrapy.extensions.telnet] INFO: Telnet Password: 2406ac8638ebdc46
+2019-09-29 10:52:55 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:52:55 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:52:55 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 71, in from_crawler
+    spider = super(JdSpider, cls).from_crawler(crawler, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 10:53:43 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:53:43 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:53:43 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:53:43 [scrapy.extensions.telnet] INFO: Telnet Password: 7b9210f91f7cae92
+2019-09-29 10:53:44 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:53:44 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:53:44 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 71, in from_crawler
+    spider = super(JdSpider, cls).from_crawler(crawler, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 10:56:13 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:56:13 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:56:13 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:56:13 [scrapy.extensions.telnet] INFO: Telnet Password: ee9cb36f436678cb
+2019-09-29 10:56:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:56:14 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:56:14 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 71, in from_crawler
+    spider = super(JdSpider, cls).from_crawler(crawler, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 10:57:56 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:57:56 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:57:56 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:57:56 [scrapy.extensions.telnet] INFO: Telnet Password: e4e394c10887c68e
+2019-09-29 10:57:57 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:57:57 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:57:57 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 70, in from_crawler
+    spider = super(JdSpider, cls).from_crawler(crawler, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 10:58:13 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:58:13 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:58:13 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:58:13 [scrapy.extensions.telnet] INFO: Telnet Password: 58f512c03080926e
+2019-09-29 10:58:14 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:58:14 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:58:14 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 10:58:59 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 10:58:59 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 10:58:59 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 10:58:59 [scrapy.extensions.telnet] INFO: Telnet Password: 79de6248739b78d5
+2019-09-29 10:58:59 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 10:59:00 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 10:59:00 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 70, in from_crawler
+    spider = super(JdSpider, cls).from_crawler(crawler, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 11:00:12 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 11:00:12 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 11:00:12 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 11:00:12 [scrapy.extensions.telnet] INFO: Telnet Password: cab26617df20ad74
+2019-09-29 11:00:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 11:00:13 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 11:00:13 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 70, in from_crawler
+    spider = super(JdSpider, cls).from_crawler(crawler, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'settings'
+2019-09-29 11:00:36 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 11:00:36 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 11:00:36 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 11:00:36 [scrapy.extensions.telnet] INFO: Telnet Password: 1ca61efd5d0fa771
+2019-09-29 11:00:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 11:00:37 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2442/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 11:00:37 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:2442
+2019-09-29 11:00:38 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2442 "POST /session HTTP/1.1" 200 886
+2019-09-29 11:00:38 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 11:00:39 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 11:00:39 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 11:00:39 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 11:00:39 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 11:00:40 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 11:00:40 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 81, in start_requests
+    cates = self.cate_brand.find()
+AttributeError: 'JdSpider' object has no attribute 'cate_brand'
+2019-09-29 11:00:50 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 11:00:50 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 11:00:50 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 11:00:50 [scrapy.extensions.telnet] INFO: Telnet Password: ce3d7c94f7e6fc10
+2019-09-29 11:00:51 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 11:00:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2460/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 11:00:51 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:2460
+2019-09-29 11:00:53 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2460 "POST /session HTTP/1.1" 200 887
+2019-09-29 11:00:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 11:00:54 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 11:00:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 11:00:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 11:00:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 11:00:54 [scrapy.core.engine] INFO: Spider opened
+2019-09-29 11:00:54 [jd] DEBUG: Resuming crawl (6984 requests scheduled)
+2019-09-29 11:00:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-09-29 11:00:54 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-09-29 11:00:54 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43824207011.html0>
+2019-09-29 11:00:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43824207012.html0>
+2019-09-29 11:00:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43824207012.html0>
+2019-09-29 11:00:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43824207013.html0>
+2019-09-29 11:00:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43824207014.html0>
+2019-09-29 11:00:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43824207014.html0>
+2019-09-29 11:00:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43824207016.html0>
+2019-09-29 11:00:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43824207017.html0>
+2019-09-29 11:00:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43824207022.html0>
+2019-09-29 11:01:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43824207022.html0>
+2019-09-29 11:01:01 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43824207024.html0>
+2019-09-29 11:01:01 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43838571328.html0>
+2019-09-29 11:01:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43838571329.html0>
+2019-09-29 11:01:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43838571329.html0>
+2019-09-29 11:01:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43841883001.html0>
+2019-09-29 11:01:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43841883002.html0>
+2019-09-29 11:01:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:01:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:01:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:01:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:01:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:01:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:01:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:01:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.jd.com/error2.aspx> (referer: None)
+2019-09-29 11:01:09 [scrapy_redis_bloomfilter.dupefilter] DEBUG: Filtered duplicate request <GET http://www.jd.com/error2.aspx> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-09-29 11:01:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:01:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:01:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.jd.com/error2.aspx> (referer: None)
+2019-09-29 11:01:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:01:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:01:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:01:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:02:18 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 11:02:18 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 11:02:18 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 11:02:18 [scrapy.extensions.telnet] INFO: Telnet Password: f3522e77f7d474c5
+2019-09-29 11:02:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 11:02:19 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:2534/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 11:02:19 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:2534
+2019-09-29 11:02:20 [urllib3.connectionpool] DEBUG: http://127.0.0.1:2534 "POST /session HTTP/1.1" 200 886
+2019-09-29 11:02:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 11:02:21 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 11:02:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 11:02:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 11:02:21 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 11:02:21 [scrapy.core.engine] INFO: Spider opened
+2019-09-29 11:02:21 [jd] DEBUG: Resuming crawl (6966 requests scheduled)
+2019-09-29 11:02:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-09-29 11:02:21 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-09-29 11:02:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43841883005.html0>
+2019-09-29 11:02:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43841883006.html0>
+2019-09-29 11:02:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43841937208.html0>
+2019-09-29 11:02:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43888755642.html0>
+2019-09-29 11:02:24 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43888755643.html0>
+2019-09-29 11:02:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43888755644.html0>
+2019-09-29 11:02:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43888755644.html0>
+2019-09-29 11:02:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/43888755645.html0>
+2019-09-29 11:02:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/44038200406.html0>
+2019-09-29 11:02:27 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/44038200406.html0>
+2019-09-29 11:02:28 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/44038200407.html0>
+2019-09-29 11:02:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/44108875818.html0>
+2019-09-29 11:02:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/44490991971.html0>
+2019-09-29 11:02:30 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/44490991972.html0>
+2019-09-29 11:02:30 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/44490991972.html0>
+2019-09-29 11:02:31 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/44490991973.html0>
+2019-09-29 11:02:31 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:02:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:02:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:02:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.jd.com/error2.aspx> (referer: None)
+2019-09-29 11:02:33 [scrapy_redis_bloomfilter.dupefilter] DEBUG: Filtered duplicate request <GET http://www.jd.com/error2.aspx> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-09-29 11:02:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:02:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:02:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:02:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:02:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:02:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 11:20:20 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 11:20:20 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 11:20:20 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 11:20:20 [scrapy.extensions.telnet] INFO: Telnet Password: 117eb73d88a83f51
+2019-09-29 11:20:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 11:20:21 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 11:20:21 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 72, in from_crawler
+    spider = super(JdSpider, cls).from_crawler(crawler, *args, **kwargs)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+TypeError: __init__() missing 2 required positional arguments: 'mongo_db' and 'cate_brand'
+2019-09-29 11:28:21 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 11:28:21 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 11:28:21 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 11:28:21 [scrapy.extensions.telnet] INFO: Telnet Password: e2ba504ddfaca808
+2019-09-29 11:28:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 11:28:21 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:3078/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 11:28:21 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:3078
+2019-09-29 11:28:23 [urllib3.connectionpool] DEBUG: http://127.0.0.1:3078 "POST /session HTTP/1.1" 200 887
+2019-09-29 11:28:23 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 11:28:24 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 11:28:24 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 11:28:24 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 11:28:24 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 11:28:24 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 11:28:24 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 84, in start_requests
+    cates = self.cate_brand.find()
+TypeError: find() takes at least 1 argument (0 given)
+2019-09-29 11:31:19 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 11:31:19 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 11:31:19 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 11:31:19 [scrapy.extensions.telnet] INFO: Telnet Password: 4b773b200889c6be
+2019-09-29 11:31:19 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 11:31:19 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:3111/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 11:31:19 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:3111
+2019-09-29 11:31:21 [urllib3.connectionpool] DEBUG: http://127.0.0.1:3111 "POST /session HTTP/1.1" 200 886
+2019-09-29 11:31:21 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 11:31:22 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 11:31:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 11:31:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 11:31:22 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 11:31:22 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 11:31:22 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+TypeError: 'NoneType' object is not iterable
+2019-09-29 11:34:05 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 11:34:05 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 11:34:05 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 11:34:05 [scrapy.extensions.telnet] INFO: Telnet Password: 0808b46c0a2bc7dc
+2019-09-29 11:34:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 11:34:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:3302/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 11:34:06 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:3302
+2019-09-29 11:34:08 [urllib3.connectionpool] DEBUG: http://127.0.0.1:3302 "POST /session HTTP/1.1" 200 886
+2019-09-29 11:34:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 11:34:09 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 11:34:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 11:34:09 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 11:34:09 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 11:34:09 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 11:34:09 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+TypeError: 'NoneType' object is not iterable
+2019-09-29 11:34:17 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 11:34:17 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 11:34:17 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 11:34:17 [scrapy.extensions.telnet] INFO: Telnet Password: 32f47ea3c00bce52
+2019-09-29 11:34:17 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 11:34:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:3321/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 11:34:18 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:3321
+2019-09-29 11:34:19 [urllib3.connectionpool] DEBUG: http://127.0.0.1:3321 "POST /session HTTP/1.1" 200 883
+2019-09-29 11:34:19 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 11:34:20 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 11:34:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 11:34:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 11:34:20 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 11:34:21 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 11:34:21 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+TypeError: 'NoneType' object is not iterable
+2019-09-29 11:34:59 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 11:34:59 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 11:34:59 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 11:34:59 [scrapy.extensions.telnet] INFO: Telnet Password: a986db93b055c70a
+2019-09-29 11:34:59 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 11:34:59 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:3349/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 11:34:59 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:3349
+2019-09-29 11:35:01 [urllib3.connectionpool] DEBUG: http://127.0.0.1:3349 "POST /session HTTP/1.1" 200 887
+2019-09-29 11:35:01 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 11:35:02 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 11:35:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 11:35:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 11:35:02 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 11:35:02 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 11:35:02 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+TypeError: 'NoneType' object is not iterable
+2019-09-29 11:54:14 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 11:54:14 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 11:54:14 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 11:54:14 [scrapy.extensions.telnet] INFO: Telnet Password: b13b884cffe2f5e4
+2019-09-29 11:54:14 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 11:54:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:4242/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 11:54:15 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:4242
+2019-09-29 11:54:17 [urllib3.connectionpool] DEBUG: http://127.0.0.1:4242 "POST /session HTTP/1.1" 200 884
+2019-09-29 11:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 11:54:18 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 11:54:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 11:54:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 11:54:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 11:54:18 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 11:54:18 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+TypeError: 'NoneType' object is not iterable
+2019-09-29 13:41:50 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 13:41:50 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 13:41:50 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 13:41:50 [scrapy.extensions.telnet] INFO: Telnet Password: cedf166d03987010
+2019-09-29 13:41:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 13:41:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:4596/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 13:41:51 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:4596
+2019-09-29 13:41:53 [urllib3.connectionpool] DEBUG: http://127.0.0.1:4596 "POST /session HTTP/1.1" 200 887
+2019-09-29 13:41:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 13:41:54 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 13:41:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 13:41:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 13:41:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 13:41:54 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 13:41:54 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+TypeError: 'NoneType' object is not iterable
+2019-09-29 14:17:51 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 14:17:51 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 14:17:51 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 14:17:51 [scrapy.extensions.telnet] INFO: Telnet Password: f1b5e6b7123b2df6
+2019-09-29 14:17:51 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 14:17:51 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:4720/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 14:17:51 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:4720
+2019-09-29 14:17:53 [urllib3.connectionpool] DEBUG: http://127.0.0.1:4720 "POST /session HTTP/1.1" 200 887
+2019-09-29 14:17:53 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 14:17:54 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 14:17:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 14:17:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 14:17:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 14:17:54 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 14:17:54 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 84, in start_requests
+    for i in parse_goods_brands(cates) :
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\utils\parse_keys.py", line 6, in parse_goods_brands
+    for cate2 in cate1["cate1_list"]:
+KeyError: 'cate1_list'
+2019-09-29 14:19:14 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 14:19:14 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 14:19:14 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 14:19:14 [scrapy.extensions.telnet] INFO: Telnet Password: 5a77d83659f01f9e
+2019-09-29 14:19:14 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 14:19:14 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:4745/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 14:19:14 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:4745
+2019-09-29 14:19:16 [urllib3.connectionpool] DEBUG: http://127.0.0.1:4745 "POST /session HTTP/1.1" 200 887
+2019-09-29 14:19:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 14:19:17 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 14:19:17 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 14:19:17 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 14:19:17 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 14:19:18 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 14:19:18 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+TypeError: 'NoneType' object is not iterable
+2019-09-29 14:21:06 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 14:21:06 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 14:21:06 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 14:21:06 [scrapy.extensions.telnet] INFO: Telnet Password: 5585809e34515125
+2019-09-29 14:21:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 14:21:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:4767/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 14:21:07 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:4767
+2019-09-29 14:21:08 [urllib3.connectionpool] DEBUG: http://127.0.0.1:4767 "POST /session HTTP/1.1" 200 885
+2019-09-29 14:21:08 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 14:21:09 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 14:21:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 14:21:09 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 14:21:09 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 14:21:10 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 14:21:10 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+TypeError: 'NoneType' object is not iterable
+2019-09-29 14:30:01 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 14:30:01 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 14:30:01 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 14:30:01 [scrapy.extensions.telnet] INFO: Telnet Password: dcda8bcaae75acd9
+2019-09-29 14:30:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 14:30:02 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:5577/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 14:30:02 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:5577
+2019-09-29 14:30:03 [urllib3.connectionpool] DEBUG: http://127.0.0.1:5577 "POST /session HTTP/1.1" 200 887
+2019-09-29 14:30:03 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 14:30:04 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 14:30:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 14:30:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 14:30:04 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 14:30:05 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 14:30:05 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+TypeError: 'NoneType' object is not iterable
+2019-09-29 14:30:44 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 14:30:44 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 14:30:44 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 14:30:44 [scrapy.extensions.telnet] INFO: Telnet Password: 341f62e7cbedd7b8
+2019-09-29 14:30:44 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 14:30:45 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:5610/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 14:30:45 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:5610
+2019-09-29 14:30:46 [urllib3.connectionpool] DEBUG: http://127.0.0.1:5610 "POST /session HTTP/1.1" 200 887
+2019-09-29 14:30:46 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 14:30:47 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 14:30:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 14:30:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 14:30:47 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 14:30:48 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-09-29 14:30:48 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\crawler.py", line 81, in crawl
+    start_requests = iter(self.spider.start_requests())
+TypeError: 'NoneType' object is not iterable
+2019-09-29 14:53:56 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: JD)
+2019-09-29 14:53:56 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-09-29 14:53:56 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'JD', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 0.5, 'DOWNLOAD_TIMEOUT': 30, 'DUPEFILTER_CLASS': 'scrapy_redis_bloomfilter.dupefilter.RFPDupeFilter', 'LOG_FILE': './log/scrapy_2019_9_29.log', 'NEWSPIDER_MODULE': 'JD.spiders', 'RETRY_TIMES': 3, 'SCHEDULER': 'scrapy_redis_bloomfilter.scheduler.Scheduler', 'SPIDER_MODULES': ['JD.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'}
+2019-09-29 14:53:56 [scrapy.extensions.telnet] INFO: Telnet Password: a0903d04c9c1bb94
+2019-09-29 14:53:56 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'JD.extensions.db.MonGoDB']
+2019-09-29 14:53:56 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:6328/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"prefs": {"profile.default_content_setting_values": {"images": 2}}, "extensions": [], "args": ["lang=zh_CN.UTF-8", "--headless"]}}}
+2019-09-29 14:53:56 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:6328
+2019-09-29 14:53:58 [urllib3.connectionpool] DEBUG: http://127.0.0.1:6328 "POST /session HTTP/1.1" 200 886
+2019-09-29 14:53:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-09-29 14:53:59 [py.warnings] WARNING: C:\Users\myq91\Desktop\MYQSpiders\JD\JD\middlewares.py:17: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy.log import logger
+
+2019-09-29 14:53:59 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['JD.middlewares.ProcessAllExceptionMiddleware',
+ 'JD.middlewares.JdDownloadmiddlewareRandomUseragent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'JD.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-29 14:53:59 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-29 14:53:59 [scrapy.middleware] INFO: Enabled item pipelines:
+['JD.pipelines.JdPipeline']
+2019-09-29 14:53:59 [scrapy.core.engine] INFO: Spider opened
+2019-09-29 14:53:59 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-09-29 14:53:59 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-09-29 14:54:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E6%88%B4%E5%B0%94%20DELL&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E8%81%94%E6%83%B3%20Lenovo&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/3794329.html0>
+2019-09-29 14:54:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E6%83%A0%E6%99%AE%20HP&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.jd.com/error2.aspx> (referer: None)
+2019-09-29 14:54:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E7%A5%9E%E8%88%9F%20HASEE&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/4826839.html0>
+2019-09-29 14:54:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E6%9C%BA%E6%A2%B0%E9%9D%A9%E5%91%BD%20MECHREVO&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/7913415.html0>
+2019-09-29 14:54:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E6%9E%81%E9%99%90%E7%9F%A9%E9%98%B5&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jd.com/error2.aspx> (referer: http://www.jd.com/error2.aspx)
+2019-09-29 14:54:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.jd.com/error2.aspx> (referer: http://www.jd.com/error2.aspx)
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\myq91\Desktop\MYQSpiders\JD\JD\spiders\jd.py", line 188, in parse_data
+    item_loader.add_value("goods_code", response.meta["brand_item"]["goods_code"])
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\loader\__init__.py", line 77, in add_value
+    self._add_value(field_name, value)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\loader\__init__.py", line 91, in _add_value
+    processed_value = self._process_input_value(field_name, value)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\loader\__init__.py", line 148, in _process_input_value
+    proc = self.get_input_processor(field_name)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\loader\__init__.py", line 137, in get_input_processor
+    self.default_input_processor)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\scrapy\loader\__init__.py", line 154, in _get_item_field_attr
+    value = self.item.fields[field_name].get(key, default)
+KeyError: 'goods_code'
+2019-09-29 14:54:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/6512799.html0>
+2019-09-29 14:54:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E4%B8%83%E5%96%9C%20HEDY&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E5%BE%AE%E6%98%9F%20MSI&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E6%B5%B7%E5%B0%94%20Haier&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/7093566.html0>
+2019-09-29 14:54:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E6%B8%85%E5%8D%8E%E5%90%8C%E6%96%B9%20THTF&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/7306959.html0>
+2019-09-29 14:54:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E5%A4%96%E6%98%9F%E4%BA%BA%20Alienware&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E5%AE%8F%E7%A2%81%20acer&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/7306961.html0>
+2019-09-29 14:54:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jd.com/error2.aspx> (referer: None)
+2019-09-29 14:54:07 [scrapy_redis_bloomfilter.dupefilter] DEBUG: Filtered duplicate request <GET https://www.jd.com/error2.aspx> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-09-29 14:54:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E8%81%94%E6%83%B3%20ThinkCentre&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/1302628.html0>
+2019-09-29 14:54:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E9%9B%B7%E7%A5%9E%20ThundeRobot&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jd.com/error2.aspx> (referer: None)
+2019-09-29 14:54:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%20Apple&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/2341206.html0>
+2019-09-29 14:54:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E7%AC%94%E8%AE%B0%E6%9C%AC%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E8%81%94%E6%83%B3%20Lenovo&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.jd.com/error2.aspx> (referer: None)
+2019-09-29 14:54:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E7%AC%94%E8%AE%B0%E6%9C%AC%E8%AE%A1%E7%AE%97%E6%9C%BA%20%E6%88%B4%E5%B0%94%20DELL&enc=utf-81&page=1> (referer: None)
+2019-09-29 14:54:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/4494706.html0>
+2019-09-29 14:54:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/7306975.html0>
+2019-09-29 14:54:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jd.com/error2.aspx> (referer: None)
+2019-09-29 14:54:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/7306979.html0>
+2019-09-29 14:54:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/6652381.html0>
+2019-09-29 14:54:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/7306981.html0>
+2019-09-29 14:54:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/7306983.html0>
+2019-09-29 14:54:16 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/8052570.html0>
+2019-09-29 14:54:17 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/8103816.html0>
+2019-09-29 14:54:17 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/4006436.html0>
+2019-09-29 14:54:19 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/4006606.html0>
+2019-09-29 14:54:19 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/12439816981.html0>
+2019-09-29 14:54:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jd.com/error2.aspx> (referer: None)
+2019-09-29 14:54:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.jd.com/error2.aspx> from <GET https://1item.jd.com/12439816983.html0>
+2019-09-29 14:54:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jd.com/error2.aspx> (referer: None)
+2019-09-29 14:54:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:24 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jd.com/error2.aspx> (referer: None)
+2019-09-29 14:54:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jd.com/error2.aspx> (referer: None)
+2019-09-29 14:54:27 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>
+2019-09-29 14:54:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.jd.com/error2.aspx> (referer: None)
+2019-09-29 14:54:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error2.aspx> from <GET http://www.jd.com/error2.aspx>

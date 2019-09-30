@@ -11,6 +11,7 @@ from scrapy.loader.processors import Compose,MapCompose,TakeFirst,Identity
 from JD.loaders.processors import *
 
 class GoodsItem(Item):
+    collection_exception = 'exception_field'
     goods_url = Field()
     goods_id = Field(input_processor = MapCompose(parse_goods_id))
     goods_name = Field(input_processor = MapCompose(deal_goods_name))
@@ -20,6 +21,8 @@ class GoodsItem(Item):
     goods_price = Field(input_processor=MapCompose(deal_goods_price))
     update_time = Field()
     history_prices = Field(input_processor=Compose(add_list_value))
+    goods_cate_id = Field()
+    goods_code = Field()
 
 class GoodsPriceItem(Item):
     last_price = Field(input_processor=MapCompose(deal_goods_price))

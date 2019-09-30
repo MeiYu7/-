@@ -7,6 +7,8 @@
 from datetime import datetime
 import pymongo
 from JD.items import GoodsItem
+from scrapy.log import logger
+
 
 class JdPipeline(object):
 
@@ -25,7 +27,7 @@ class JdPipeline(object):
         return cls(
             mongo_uri=crawler.settings.get('MONGO_URI'),
             mongo_db=crawler.settings.get('MONGO_DATABASE', 'items'),
-            collection_name = crawler.settings.get('COLLECTION_NAME', 'goods'),
+            collection_name = crawler.settings.get('GOODS_COLLECITON', 'goods'),
             time_interval = crawler.settings.get("SAVE_TIME_INTERVAL", 60),
             item_capacity = crawler.settings.get("SAVE_ITEM_CAPACITY", 100)
         )
@@ -35,16 +37,14 @@ class JdPipeline(object):
         self.db = self.client[self.mongo_db]
         self.coll = self.db[self.collection_name]  # 创建数据库中的表格
 
-
     def close_spider(self, spider):
         if len(self.goods_items)>0:
             self.insert_many_goods()
         self.client.close()
         print("最终插入{}条".format(self.insert_num))
+        logger.info("最终插入{}条".format(self.insert_num))
 
     def process_item(self, item, spider):
-        # self.coll.insert_one(dict(item))
-        # print("插入1条")
         if isinstance(item,GoodsItem):
             self.process_goods_item(item,spider)
         return item
@@ -54,6 +54,7 @@ class JdPipeline(object):
         self.goods_items.append(dict(item))
         self.time_end = datetime.now()
         print("此时积攒了item{}个".format(len(self.goods_items)))
+
         if len(self.goods_items)>= self.item_capacity:
             self.insert_many_goods()
 
